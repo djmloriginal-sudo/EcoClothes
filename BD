@@ -1,0 +1,36 @@
+CREATE DATABASE IF NOT EXISTS eco_clothes;
+USE eco_clothes;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id VARCHAR(100) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha TEXT NOT NULL,
+    criadoEm DATETIME NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS analises (
+    id VARCHAR(100) PRIMARY KEY,
+    usuarioId VARCHAR(100) NOT NULL,
+    composicao TEXT NOT NULL,
+    resultado TEXT NOT NULL,
+    materiais TEXT NOT NULL,
+    dataCriacao DATETIME NOT NULL,
+    FOREIGN KEY (usuarioId) REFERENCES usuarios(id)
+);
+
+CREATE TABLE IF NOT EXISTS favoritos (
+    id VARCHAR(100) PRIMARY KEY,
+    usuarioId VARCHAR(100) NOT NULL,
+    composicao TEXT,
+    nome TEXT,
+    nota DECIMAL(5,2),
+    nivel VARCHAR(50),
+    materiais TEXT,
+    dataAdicionado DATETIME NOT NULL,
+    FOREIGN KEY (usuarioId) REFERENCES usuarios(id)
+);
+
+select * from usuarios;
+
+DELETE FROM usuarios WHERE condição;
