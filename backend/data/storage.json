@@ -1,0 +1,20 @@
+{
+  "usuarios": [
+    {
+      "id": "usuario-1784209439956-b8d5b4",
+      "nome": "Teste",
+      "email": "teste@teste.com",
+      "senha": "$2b$10$jJVQC8yGhMWSfqgtCG1B2OTaIQtCGrB4X99hMibSykq.NbPNTpxbW",
+      "criadoEm": "2026-07-16T13:43:59.956Z"
+    },
+    {
+      "id": "usuario-1784211678248-d3180a",
+      "nome": "Lorenzo Miguel Stumpf Lopes",
+      "email": "djmloriginal@gmail.com",
+      "senha": "$2b$10$cwx.DJfJWM9nn8JdjL1.JuU9kDDylxrLI5D9qE81em4IS0QUoPs7W",
+      "criadoEm": "2026-07-16T14:21:18.248Z"
+    }
+  ],
+  "favoritos": [],
+  "analises": []
+}
